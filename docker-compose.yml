@@ -1,0 +1,11 @@
+services:
+  node:
+    command: bash
+    image: node:18
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    user: node
+    volumes:
+      - ./1_The_Physical/Getting_Started_Emergent_Design/1_Red_Green_Refactor/1_1_Fizzbuzz:/home/node/app
+    working_dir: /home/node/app
