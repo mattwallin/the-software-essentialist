@@ -1,4 +1,7 @@
 export default function fizzbuzz(num: number): string {
+    if(num % 5 == 0 && num % 3 == 0) {
+        return "fizzbuzz";
+    }
     if(num % 3 == 0) {
         return "fizz"
     }
