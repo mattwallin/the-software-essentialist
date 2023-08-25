@@ -3,8 +3,12 @@ import fizzbuzz from "./fizzbuzz";
 
 
 describe("fizzbuzz", () => {
-    it("returns fizz when divisible by 3", () => {
-        console.log(fizzbuzz);
-        expect(fizzbuzz(3)).toBe("fizz");
+    it.each([
+        [1, '1'],
+        [2, '2'],
+        [3, 'fizz'],
+        [5, 'buzz']
+    ])('entered: %i, expected: %s', (num, expected) => {
+        expect(fizzbuzz(num)).toBe(expected);
     });
 });
