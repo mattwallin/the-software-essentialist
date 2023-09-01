@@ -5,7 +5,9 @@ describe('palindrome checker', () => {
         "mom",
         "dad",
         "Mom",
-        "Dad"
+        "Dad",
+        "Was It A Rat I Saw",
+        "Never Odd or Even",
     ])('knows that %s is a palindrome', (str) => {
         expect(palindromeChecker(str)).toBeTruthy();
     });
