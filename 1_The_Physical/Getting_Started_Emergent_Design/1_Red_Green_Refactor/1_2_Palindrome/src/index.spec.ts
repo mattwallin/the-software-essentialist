@@ -8,6 +8,8 @@ describe('palindrome checker', () => {
         "Dad",
         "Was It A Rat I Saw",
         "Never Odd or Even",
+        "Murder for a jar of red rum",
+        "A man a plan a canal Panama"
     ])('knows that %s is a palindrome', (str) => {
         expect(palindromeChecker(str)).toBeTruthy();
     });
