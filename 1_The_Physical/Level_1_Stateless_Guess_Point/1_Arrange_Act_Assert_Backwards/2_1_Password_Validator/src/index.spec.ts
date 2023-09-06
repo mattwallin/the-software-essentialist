@@ -12,6 +12,8 @@ it.each([
   "1234567890123456"
 ])('knows that %s IS NOT a valid password', (str) => {
   expect(passwordvalidator(str)).toHaveProperty('isValid', false);
+  expect(passwordvalidator(str)).toHaveProperty('errors', ["Password must be within 5 and 15 characters"]);
+
 });
 })
 
