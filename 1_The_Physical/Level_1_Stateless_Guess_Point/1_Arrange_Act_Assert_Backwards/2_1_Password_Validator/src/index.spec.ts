@@ -1,9 +1,11 @@
+import passwordvalidator from "./index"
 
 describe('password validator', () => {
-
-  test('hello', () => {
-    expect("between 5 and 15").toContain('5 and 15')
-  })
+  it.each([
+    "12345",
+])('knows that %s is a valid password', (str) => {
+    expect(passwordvalidator(str)).toHaveProperty('isValid', true);
+});
 })
 
 
