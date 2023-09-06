@@ -5,8 +5,8 @@ interface PasswordValidator {
 
 export default function passwordValidator(password: string): PasswordValidator {
     let isValid = false;
-    if(password.length >= 5) {
+    if(password.length >= 5 && password.length <= 15) {
         isValid = true;
     }
-    return {"isValid": isValid, } as PasswordValidator
+    return {"isValid": isValid, "errors": [] } as PasswordValidator
 }

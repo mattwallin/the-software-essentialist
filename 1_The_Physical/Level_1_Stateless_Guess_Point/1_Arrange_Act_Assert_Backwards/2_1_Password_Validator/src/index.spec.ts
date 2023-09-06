@@ -9,6 +9,7 @@ describe('password validator', () => {
 
 it.each([
   "1234",
+  "1234567890123456"
 ])('knows that %s IS NOT a valid password', (str) => {
   expect(passwordvalidator(str)).toHaveProperty('isValid', false);
 });
