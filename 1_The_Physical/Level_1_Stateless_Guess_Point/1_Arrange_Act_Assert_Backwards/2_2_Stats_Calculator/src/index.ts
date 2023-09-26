@@ -1,5 +1,5 @@
 
 
-export default function statsCalc(intArr: number[]): boolean {
-    return true
+export default function statsCalc(intArr: number[]): number {
+    return intArr.length;
 }
