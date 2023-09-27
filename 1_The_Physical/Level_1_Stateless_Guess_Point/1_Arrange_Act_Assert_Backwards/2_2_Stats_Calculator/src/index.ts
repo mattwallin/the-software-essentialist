@@ -4,7 +4,7 @@ export default function statsCalc(intArr: number[]): number[] {
     if(intArr.length === 0) 
         return []
     let minValue = intArr[0];
-    let maxValue = 0;
+    let maxValue = intArr[0];
     intArr.forEach((element) => {
         if(minValue > element)
             minValue = element
